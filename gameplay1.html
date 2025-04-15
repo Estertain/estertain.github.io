@@ -6,6 +6,12 @@
     <title>SNES Gameplay - Estertain</title>
     <link rel="stylesheet" href="styles.css">
 
+    <!-- เพิ่ม preconnect สำหรับ YouTube -->
+    <link rel="preconnect" href="https://www.youtube.com">
+    <link rel="preconnect" href="https://www.google.com">
+    <link rel="dns-prefetch" href="https://www.youtube.com">
+    <link rel="dns-prefetch" href="https://www.google.com">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
@@ -37,63 +43,437 @@
 
     <main>
         <section>
-            <h2>Gradius III </h2>
+            <h2>Gradius III</h2>
             <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/4jEjivCW79I?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/4jEjivCW79I/hqdefault.jpg" alt="Gradius III thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe" 
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/4jEjivCW79I?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
             </div>    
             <br><br>
             
-            <h2>Front Mission </h2>
+            <h2>Front Mission</h2>
             <div class="video-container">      
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/1Hwy9I15jz4?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/qI97Fg6YV2U?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/VTGvl-p3tWU?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/v3Cj0WjemCI?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/SeAojBUt-Zc?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/1-YD4mWdlUc?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/xkXM_2frhh8?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/x5DcEonr8is?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/f9hox1oOOrM?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/6Bl6hOMHisw?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/TIv6Gus4GwA?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Kb-XcqHQltM?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/7GT7q53cIMA?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ul3a102uUwM?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/n1ig1uTfAYE?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/VexG6UmWOTs?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/yXR5iGGW7po?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/wa3lshky_5Y?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ORmirXxnwiA?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/87WFtjSnoLY?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/xLjcxTfOQyU?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/DHOYzRCvsHc?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/3KE9EwupUqU?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/8xhRcIHEwFk?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/n_OTYiuwwDM?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/78uWDwGTvJE?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>    
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/1Hwy9I15jz4/hqdefault.jpg" alt="Front Mission thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/1Hwy9I15jz4?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">      
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/qI97Fg6YV2U/hqdefault.jpg" alt="Front Mission thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/qI97Fg6YV2U?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">      
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/VTGvl-p3tWU/hqdefault.jpg" alt="Front Mission thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/VTGvl-p3tWU?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">      
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/v3Cj0WjemCI/hqdefault.jpg" alt="Front Mission thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/v3Cj0WjemCI?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">      
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/SeAojBUt-Zc/hqdefault.jpg" alt="Front Mission thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/SeAojBUt-Zc?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">      
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/1-YD4mWdlUc/hqdefault.jpg" alt="Front Mission thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/1-YD4mWdlUc?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">      
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/xkXM_2frhh8/hqdefault.jpg" alt="Front Mission thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/xkXM_2frhh8?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">      
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/x5DcEonr8is/hqdefault.jpg" alt="Front Mission thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/x5DcEonr8is?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">      
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/f9hox1oOOrM/hqdefault.jpg" alt="Front Mission thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/f9hox1oOOrM?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">      
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/6Bl6hOMHisw/hqdefault.jpg" alt="Front Mission thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/6Bl6hOMHisw?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">      
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/TIv6Gus4GwA/hqdefault.jpg" alt="Front Mission thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/TIv6Gus4GwA?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">      
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/Kb-XcqHQltM/hqdefault.jpg" alt="Front Mission thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/Kb-XcqHQltM?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">      
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/7GT7q53cIMA/hqdefault.jpg" alt="Front Mission thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/7GT7q53cIMA?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">      
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/Ul3a102uUwM/hqdefault.jpg" alt="Front Mission thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/Ul3a102uUwM?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">      
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/n1ig1uTfAYE/hqdefault.jpg" alt="Front Mission thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/n1ig1uTfAYE?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">      
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/VexG6UmWOTs/hqdefault.jpg" alt="Front Mission thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/VexG6UmWOTs?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">      
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/yXR5iGGW7po/hqdefault.jpg" alt="Front Mission thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/yXR5iGGW7po?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">      
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/wa3lshky_5Y/hqdefault.jpg" alt="Front Mission thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/wa3lshky_5Y?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">      
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/ORmirXxnwiA/hqdefault.jpg" alt="Front Mission thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/ORmirXxnwiA?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">      
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/87WFtjSnoLY/hqdefault.jpg" alt="Front Mission thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/87WFtjSnoLY?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">      
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/xLjcxTfOQyU/hqdefault.jpg" alt="Front Mission thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/xLjcxTfOQyU?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">      
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/DHOYzRCvsHc/hqdefault.jpg" alt="Front Mission thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/DHOYzRCvsHc?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">      
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/3KE9EwupUqU/hqdefault.jpg" alt="Front Mission thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/3KE9EwupUqU?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">      
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/8xhRcIHEwFk/hqdefault.jpg" alt="Front Mission thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/8xhRcIHEwFk?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">      
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/n_OTYiuwwDM/hqdefault.jpg" alt="Front Mission thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/n_OTYiuwwDM?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">      
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/78uWDwGTvJE/hqdefault.jpg" alt="Front Mission thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/78uWDwGTvJE?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
             <br><br>            
                 
-            <h2>Super Tetris 2: Bombliss </h2>
+            <h2>Super Tetris 2: Bombliss</h2>
             <div class="video-container">            
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/0ktOxl4hR94?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/0ktOxl4hR94/hqdefault.jpg" alt="Super Tetris 2 thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/0ktOxl4hR94?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
             </div>    
             <br><br>                
 
-            <h2>Soccer Shootout </h2>
+            <h2>Soccer Shootout</h2>
             <div class="video-container">  
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ehYcZRMzdtM?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/kCLia61hwCk?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/9rxGJM1zydw?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Rehg9HTeG5Y?vq=hd1080&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>    
-            <br><br>                
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/ehYcZRMzdtM/hqdefault.jpg" alt="Soccer Shootout thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/ehYcZRMzdtM?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
 
+            <div class="video-container">  
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/kCLia61hwCk/hqdefault.jpg" alt="Soccer Shootout thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/kCLia61hwCk?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">  
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/9rxGJM1zydw/hqdefault.jpg" alt="Soccer Shootout thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/9rxGJM1zydw?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+
+            <div class="video-container">  
+                <div class="video-placeholder">
+                    <img class="video-thumbnail" src="https://img.youtube.com/vi/Rehg9HTeG5Y/hqdefault.jpg" alt="Soccer Shootout thumbnail">
+                    <div class="play-button"></div>
+                </div>
+                <iframe class="lazy-iframe"
+                        loading="lazy"
+                        data-src="https://www.youtube.com/embed/Rehg9HTeG5Y?autoplay=0&rel=0&vq=hd1080" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+            <br><br>                
         </section>
     </main>
 
     <footer>
         <p>&copy; 2023 Estertain. All rights reserved.</p>
     </footer>
+
+    <!-- เพิ่มการเรียกใช้ JavaScript ก่อนปิด body -->
+    <script src="script.js" defer></script>
 </body>
 </html>
