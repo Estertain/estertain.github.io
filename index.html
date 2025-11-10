@@ -1,0 +1,213 @@
+<!--
+Estertain one-page HTML (Minimal Clean White)
+Place this file as index.html in a GitHub repo and deploy to Vercel.
+
+Asset structure:
+- /assets/favicon files (keep inside /assets for cleaner root)
+- /assets/logo-estertainplay.png
+- /assets/logo-estertainio.png
+
+Quick edits:
+ - Replace PLAYLIST IDs in the JS variables below
+ - Replace SOCIAL links if needed
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Estertain — Fun, Nostalgia & Pixels</title>
+  <meta name="description" content="Estertain — retro gaming and .io action. Watch playlists from EstertainPlay and EstertainIO." />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+  <link rel="shortcut icon" href="assets/favicon.ico">
+  <meta name="theme-color" content="#ffffff">
+
+  <style>
+    :root{
+      --accent-1: #e23b3b;
+      --accent-2: #1370d6;
+      --text: #111;
+      --muted: #666;
+      --maxwidth: 1100px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    html,body{height:100%;}
+    body{
+      margin:0; background:#fff; color:var(--text);
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; line-height:1.45;
+    }
+    .wrap{max-width:var(--maxwidth); margin:0 auto; padding:48px 20px;}
+
+    .hero{display:flex; align-items:center; justify-content:space-between; gap:24px; padding:48px 0 36px;}
+    .brand{display:flex; align-items:center; gap:12px; font-weight:700; font-size:28px; letter-spacing:-0.02em;}
+    .brand img{height:48px; width:auto;}
+    h1{font-size:40px; margin:8px 0 12px}
+    p.lead{color:var(--muted); margin:0 0 18px}
+    .ctas{display:flex; gap:12px; align-items:center}
+    .btn{display:inline-flex; align-items:center; gap:10px; padding:10px 18px; border-radius:999px; border:1px solid rgba(0,0,0,0.08); text-decoration:none; font-weight:600}
+    .btn.primary{background:linear-gradient(90deg,var(--accent-1),var(--accent-2)); color:#fff; border:0}
+    .btn.ghost{background:#fff}
+
+    .hero .right{width:360px; flex:0 0 360px}
+    .hero .poster{width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.06); overflow:hidden}
+    .poster img{width:100%; height:auto; display:block}
+
+    .about{display:flex; gap:18px; align-items:center; padding:28px 0}
+    .avatar{width:88px; height:88px; border-radius:999px; overflow:hidden; flex:0 0 88px; box-shadow:0 6px 20px rgba(0,0,0,0.04)}
+    .about p{margin:0; color:var(--muted)}
+
+    .playlists{display:grid; grid-template-columns:1fr 1fr; gap:28px; padding:28px 0}
+    .playlist h3{display:flex; align-items:center; gap:10px; margin:0 0 6px}
+    .playlist h3 img{height:28px; width:auto}
+    .playlist p{margin:0 0 12px; color:var(--muted)}
+    .video-embed{border-radius:10px; overflow:hidden; box-shadow:0 8px 24px rgba(0,0,0,0.06)}
+    .embed-wrapper{position:relative;padding-top:56.25%; background:#f8f8f8}
+    .embed-wrapper iframe{position:absolute; inset:0; width:100%; height:100%; border:0}
+
+    .highlights{padding:18px 0}
+    .grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+    .thumb{border-radius:10px; overflow:hidden; box-shadow:0 6px 18px rgba(0,0,0,0.04); background:#f6f6f6}
+    .thumb img{display:block; width:100%}
+    .thumb .caption{padding:10px; font-size:14px}
+
+    .subscribe{display:flex; gap:12px; align-items:center; padding:28px 0}
+    footer{padding:28px 0; color:var(--muted); border-top:1px solid #f0f0f0}
+
+    @media (max-width:900px){
+      h1{font-size:30px}
+      .hero{flex-direction:column; align-items:flex-start}
+      .hero .right{width:100%; flex-basis:auto}
+      .playlists{grid-template-columns:1fr}
+      .grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:540px){
+      .grid{grid-template-columns:1fr}
+      .brand{font-size:20px}
+      .btn{padding:10px 14px}
+    }
+  </style>
+</head>
+<body>
+  <script>
+    const CONFIG = {
+      playlistEstertainPlay: 'PL_REPLACE_WITH_YOUR_PLAYLIST_ID_ESTERTAINPLAY',
+      playlistEstertainIO:  'PL_REPLACE_WITH_YOUR_PLAYLIST_ID_ESTERTAINIO',
+      channelEstertainPlay: 'https://www.youtube.com/@estertainplay',
+      channelEstertainIO:  'https://www.youtube.com/@estertainio',
+      emailContact: 'estertain.th@gmail.com'
+    };
+    function playlistEmbedSrc(listId){
+      if(!listId) return '';
+      if(listId.startsWith('http')) return listId;
+      return 'https://www.youtube.com/embed?listType=playlist&list=' + encodeURIComponent(listId);
+    }
+  </script>
+
+  <div class="wrap">
+    <section class="hero" id="home">
+      <div class="left">
+        <div class="brand">
+          <img src="assets/logo-estertainplay.png" alt="Estertain logo">
+          ESTERTAIN
+        </div>
+        <h1>Fun, Nostalgia & Pixels — Welcome to Estertain!</h1>
+        <p class="lead">Retro games and fast .io matches — curated playlists from EstertainPlay and EstertainIO.</p>
+        <div class="ctas">
+          <a class="btn primary" href="" id="cta-play" target="_blank" rel="noopener">▶️ Watch EstertainPlay</a>
+          <a class="btn ghost" href="" id="cta-io" target="_blank" rel="noopener">⚔️ Watch EstertainIO</a>
+        </div>
+      </div>
+      <div class="right">
+        <div class="poster" aria-hidden="true">
+          <img src="assets/logo-estertainio.png" alt="EstertainIO preview">
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="avatar" aria-hidden="true">
+        <img src="assets/logo-estertainplay.png" alt="Estertain avatar">
+      </div>
+      <div>
+        <h3>About</h3>
+        <p>I'm Estertain, a retro-fun gaming creator exploring classics and .io worlds — all play, no commentary, pure nostalgia!</p>
+        <p style="margin-top:8px;color:var(--muted);font-size:14px">Follow: <a href="#" id="link-play">EstertainPlay</a> • <a href="#" id="link-io">EstertainIO</a></p>
+      </div>
+    </section>
+
+    <section class="playlists">
+      <div class="playlist">
+        <h3><img src="assets/logo-estertainplay.png" alt="EstertainPlay logo"> ESTERTAINPLAY</h3>
+        <p>No commentary retro adventures — SNES, NES, and arcade nostalgia reborn.</p>
+        <div class="video-embed"><div class="embed-wrapper" id="embed-play"></div></div>
+      </div>
+      <div class="playlist">
+        <h3><img src="assets/logo-estertainio.png" alt="EstertainIO logo"> ESTERTAINIO</h3>
+        <p>Fast, funny, and competitive! Join the world of .io madness.</p>
+        <div class="video-embed"><div class="embed-wrapper" id="embed-io"></div></div>
+      </div>
+    </section>
+
+    <section class="highlights">
+      <h3>Highlights</h3>
+      <div class="grid">
+        <a class="thumb" href="https://www.youtube.com/" target="_blank" rel="noopener">
+          <img src="https://via.placeholder.com/600x340?text=38+kills+but+no+map" alt="38 kills thumbnail">
+          <div class="caption">38 kills but no map domination!</div>
+        </a>
+        <a class="thumb" href="https://www.youtube.com/" target="_blank" rel="noopener">
+          <img src="https://via.placeholder.com/600x340?text=Kirby+Arena+No+Commentary" alt="Kirby Arena thumbnail">
+          <div class="caption">Kirby Arena — No Commentary</div>
+        </a>
+        <a class="thumb" href="https://via.placeholder.com/600x340?text=Paper.io+Chaos+Mode" alt="Paper.io thumbnail">
+          <div class="caption">Paper.io Chaos Mode!</div>
+        </a>
+      </div>
+    </section>
+
+    <section class="subscribe">
+      <div style="flex:1">
+        <h3>Love gaming? Join the Estertain Squad!</h3>
+        <p style="margin:6px 0 0;color:var(--muted)">Subscribe for retro playthroughs and fast .io matches.</p>
+      </div>
+      <div style="display:flex; gap:8px">
+        <a id="sub-play" class="btn" href="#" target="_blank" rel="noopener">🔴 Subscribe EstertainPlay</a>
+        <a id="sub-io" class="btn" href="#" target="_blank" rel="noopener">🔵 Subscribe EstertainIO</a>
+      </div>
+    </section>
+
+    <footer>
+      <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap">
+        <div>© 2025 Estertain • <a href="mailto:estertain.th@gmail.com">estertain.th@gmail.com</a></div>
+        <div style="color:var(--muted)">Follow: <a href="#" id="f-play">YouTube</a> • <a href="#" id="f-io">YouTube</a></div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    (function(){
+      const embedPlay = document.getElementById('embed-play');
+      const embedIO = document.getElementById('embed-io');
+      const srcPlay = playlistEmbedSrc(CONFIG.playlistEstertainPlay);
+      const srcIO = playlistEmbedSrc(CONFIG.playlistEstertainIO);
+      embedPlay.innerHTML = srcPlay ? `<iframe src="${srcPlay}" title="EstertainPlay playlist" allowfullscreen loading="lazy"></iframe>` : '<div style="padding:32px;text-align:center;color:var(--muted)">Update CONFIG.playlistEstertainPlay</div>';
+      embedIO.innerHTML = srcIO ? `<iframe src="${srcIO}" title="EstertainIO playlist" allowfullscreen loading="lazy"></iframe>` : '<div style="padding:32px;text-align:center;color:var(--muted)">Update CONFIG.playlistEstertainIO</div>';
+
+      document.getElementById('cta-play').href = CONFIG.channelEstertainPlay;
+      document.getElementById('cta-io').href = CONFIG.channelEstertainIO;
+      document.getElementById('link-play').href = CONFIG.channelEstertainPlay;
+      document.getElementById('link-io').href = CONFIG.channelEstertainIO;
+      document.getElementById('sub-play').href = CONFIG.channelEstertainPlay;
+      document.getElementById('sub-io').href = CONFIG.channelEstertainIO;
+      document.getElementById('f-play').href = CONFIG.channelEstertainPlay;
+      document.getElementById('f-io').href = CONFIG.channelEstertainIO;
+    })();
+  </script>
+</body>
+</html>
